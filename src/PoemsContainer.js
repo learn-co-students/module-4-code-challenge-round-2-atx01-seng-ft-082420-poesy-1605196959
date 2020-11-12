@@ -6,7 +6,7 @@ class PoemsContainer extends React.Component {
     return (
       <div className="poems-container">
         {
-          // render poems here
+          this.props.poems.map(poem => <Poem poem={poem}/>)
         }
       </div>
     );
@@ -14,3 +14,4 @@ class PoemsContainer extends React.Component {
 }
 
 export default PoemsContainer;
+ 
